@@ -67,9 +67,6 @@ class ThermometreTest {
         // Arrange
         int[] tableauInt = new int[10001];
 
-        // Act
-        int result = thermometre.temperature(tableauInt);
-
         // Assert
         assertThrows(IllegalArgumentException.class, () -> thermometre.temperature(tableauInt));
     }
